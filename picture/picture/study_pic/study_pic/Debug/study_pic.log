@@ -1,0 +1,8 @@
+﻿  image.cpp
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(26,7): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(27,19): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(28,19): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(231,10): warning C4244: “初始化”: 从“COLORREF”转换到“UCHAR”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(232,10): warning C4244: “初始化”: 从“COLORREF”转换到“UCHAR”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(233,10): warning C4244: “初始化”: 从“COLORREF”转换到“UCHAR”，可能丢失数据
+  study_pic.vcxproj -> C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\Debug\study_pic.exe

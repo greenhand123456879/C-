@@ -1,0 +1,80 @@
+1. #include<graphics.h>库函数的使用
+
+-> initgraph(GRAPH_EDGE, GRAPH_EDGE, SHOWCONSOLE);//初始化一个图形界面高度GRAPH_EDGE，宽度GRAPH_EDGE，SHOWCONSOLE同时显示控制台
+
+-> cleardevice()////刷新graph界面
+
+-> setbkcolor、setfillcolor、setlinestyle、settextcolor、settextstyle······一堆设置函数
+
+-> textheight、textwidth计算文本高度、宽度
+
+-> outtextxy在指定位置输出字体
+
+-> fillrectangle、line、fillcircle在指定位置画矩形、线、圆圈
+
+-> ExMessage是一个获取鼠标消息的
+struct ExMessage
+{
+	USHORT message;					// 消息标识
+	union
+	{
+		// 鼠标消息的数据
+		struct
+		{
+			bool ctrl		:1;		// Ctrl 键是否按下
+			bool shift		:1;		// Shift 键是否按下
+			bool lbutton	:1;		// 鼠标左键是否按下
+			bool mbutton	:1;		// 鼠标中键是否按下
+			bool rbutton	:1;		// 鼠标右键
+			short x;				// 鼠标的 x 坐标
+			short y;				// 鼠标的 y 坐标
+			short wheel;			// 鼠标滚轮滚动值，为 120 的倍数
+		};
+
+		// 按键消息的数据
+		struct
+		{
+			BYTE vkcode;			// 按键的虚拟键码
+			BYTE scancode;			// 按键的扫描码（依赖于 OEM）
+			bool extended	:1;		// 按键是否是扩展键
+			bool prevdown	:1;		// 按键的前一个状态是否按下
+		};
+
+		// 字符消息的数据
+		TCHAR ch;
+
+		// 窗口消息的数据
+		struct
+		{
+			WPARAM wParam;
+			LPARAM lParam;
+		};
+	};
+};
+
+定义一个消息ExMessage Emsg;
+-> peekmessage(&Emsg, EM_MOUSE)//check Left mouse button is pressed
+
+-> Emsg.message == WM_LBUTTONDOWN //Left mouse button is pressed
+
+-> Emsg.x获取x坐标，Emsg.y获取y坐标
+
+-> BeginBatchDraw();
+while (1)
+    FlushBatchDraw();
+EndBatchDraw();
+三件套
+
+2. 鼠标点击的坐标与画图的坐标看看是否需要转换，不要被这个搞出很多bug
+
+3. 需要两个坐标时再获取完毕之后处理完后，记得重置一下两个坐标
+
+-> struct MouseEventState
+{
+	MyPoint pBegin;
+	MyPoint pEnd;
+	int pointState;
+};
+
+4. 不变的数据记得用枚举保存
+

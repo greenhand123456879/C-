@@ -1,0 +1,4 @@
+﻿  connectship.cpp
+C:\Users\luolan\my_D\VS19\ALLprogarm\shiyan\connectship\connectship\connectship.cpp(95,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\luolan\my_D\VS19\ALLprogarm\shiyan\connectship\connectship\connectship.cpp(134,40): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  connectship.vcxproj -> C:\Users\luolan\my_D\VS19\ALLprogarm\shiyan\connectship\Debug\connectship.exe

@@ -1,0 +1,7 @@
+﻿  image.cpp
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(24,7): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(25,19): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\study_pic\image.cpp(26,19): warning C4244: “=”: 从“DWORD”转换到“unsigned char”，可能丢失数据
+  studycolor.cpp
+  正在生成代码...
+  study_pic.vcxproj -> C:\Users\luolan\my_D\VS19\ALLprogarm\picture\picture\study_pic\x64\Debug\study_pic.exe
